@@ -13,12 +13,12 @@ export class CreateSkinxDTO {
   @IsNumber()
   @IsOptional()
   @ApiProperty({ description: 'skinx id' })
-  forked_from?: number;
+  forkedFrom?: number;
 
   @IsNumber()
   @IsOptional()
   @ApiProperty({ description: 'skinx id' })
-  purchased_from?: number;
+  purchasedFrom?: number;
 }
 
 export class UpdateSkinxDTO {}

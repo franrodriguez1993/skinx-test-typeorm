@@ -22,7 +22,7 @@ export class SkinXEntity {
   purchasedFrom: SkinXEntity;
 
   @OneToMany(() => SkinXEntity, (skinX) => skinX.purchasedFrom)
-  purchasedList: SkinXEntity[]; //lista de skinxs vendidas
+  purchasedList: SkinXEntity[];
 
   //forked
   @ManyToOne(() => SkinXEntity, (skinX) => skinX.forkedList)
@@ -30,7 +30,7 @@ export class SkinXEntity {
   forkedFrom: SkinXEntity;
 
   @OneToMany(() => SkinXEntity, (skinX) => skinX.forkedFrom)
-  forkedList: SkinXEntity[]; //lista de skinxs forkeadas
+  forkedList: SkinXEntity[];
 
   // relation with user:
   @ManyToOne(() => UserEntity, (user) => user.skinxs)
